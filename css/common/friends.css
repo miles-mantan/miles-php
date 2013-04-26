@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#friends-section {
+	position: fixed;
+	height: 0;
+	border-width: 0 35px 60px 35px;
+	border-style: none solid solid solid;
+	border-color: transparent transparent rgba(48, 176, 180, 0.8) transparent;
+	left: 5%;
+	right: 5%;
+	bottom: -80px;
+	z-index: 100;
+	-webkit-transition: bottom 500ms;
+}
+
+.friend {
+	display: inline-block;
+}
+
+.friend img {
+	width: 64px;
+	height: 64px;
+	margin-top: -20px;
+	-webkit-transition: all 200ms;
+}
+
+.friend:hover img {
+	width: 128px;
+	height: 128px;
+	margin-top: -80px;
+}

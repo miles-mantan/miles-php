@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url("default.css");
+@import url("common/nav.css");
+@import url("common/friends.css");
+
+#corner {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 64px;
+	height: 64px;
+	z-index: 20;
+	border-bottom-right-radius: 10px;
+	-webkit-transition: all 500ms ease-in;
+}
+
+@-webkit-keyframes page-corner
+{
+	from { width: 128px; height: 128px; }
+	to { width: 4096px; height: 4096px; }
+}
+
+#corner:hover {
+	width: 128px;
+	height: 128px;
+}
+
+.project {
+	position: relative;
+	border: 1px lightgray solid;
+	float: left;
+	cursor: pointer;
+}
+
+.project .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	width: 200px;
+	height: 200px;
+	border: 1px black solid;
+	background: url("../images/9999.jpg") -1100px -200px;
+	overflow: hidden;
+}
+
+.project .content .description {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -100px;
+	height: 100px;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.7);
+	-webkit-transition: bottom 500ms;
+}
+
+.project:hover .content .description {
+	bottom: 0;
+}
+
+.project .content .description p {
+	margin: 0;
+}
+
+.project .content .description .title {
+	font-size: 15px;
+}
+
+.project .content .description .info {
+	font-size: 10px;
+}
+
+.project .content .description .info a {
+	color: red;
+}
+
+.project .content footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 30px;
+	background-color: white;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}
+
+.project.ad .content footer {
+	background-color: #30b0b4;
+	color: white;
+}

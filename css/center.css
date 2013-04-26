@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url("default.css");
+@import url("common/nav.css");
+@import url("common/friends.css");
+@import url("common/left-right.css");
+
+.user-info {
+	width: 100%;
+	height: 220px;
+	vertical-align: bottom;
+}
+
+.user-info .text-info {
+	display: inline-block;
+	width: 20%;
+	height: 200px;
+	margin: 10px 0;
+	vertical-align: bottom;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.user-info .text-info div {
+	padding-left: 50px;
+}
+
+.user-info .text-info .label {
+	display: inline-block;
+	width: 80px;
+}
+
+.user-info .avatar {
+	display: inline-block;
+	width: 37%;
+	height: 200px;
+	margin: 10px 1%;
+	background-color: red;
+	vertical-align: bottom;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.user-info .avatar:nth-child(even) {
+	background-image: url("../images/user.png");
+}
+
+.user-info .avatar:nth-child(odd) {
+	background-image: url("../images/room.jpg");
+}
+
+h1.title {
+	border-bottom: 3px #30b0b4 solid;
+	padding: 5px 50px;
+	margin: 0;
+	box-shadow: 0 2px 2px lightgray;
+	letter-spacing: .2em;
+}
+
+
+
+.project {
+	position: relative;
+	border: 1px lightgray solid;
+	float: left;
+	cursor: pointer;
+}
+
+.project .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	width: 200px;
+	height: 200px;
+	border: 1px black solid;
+	background: url("../images/9999.jpg") -1100px -200px;
+	overflow: hidden;
+}
+
+.project .content .description {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -100px;
+	height: 100px;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.7);
+	-webkit-transition: bottom 500ms;
+}
+
+.project:hover .content .description {
+	bottom: 0;
+}
+
+.project .content .description p {
+	margin: 0;
+}
+
+.project .content .description .title {
+	font-size: 15px;
+}
+
+.project .content .description .info {
+	font-size: 10px;
+}
+
+.project .content .description .info a {
+	color: red;
+}
+
+.project .content footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 30px;
+	background-color: white;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}
+
+.project.ad .content footer {
+	background-color: #30b0b4;
+	color: white;
+}
+
+#left-section ul {
+	list-style-type: none;
+	margin-left: -110px;
+	padding: 0;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#left-section li {
+	margin: 0;
+	padding: 10px 0;
+	cursor: pointer;
+}

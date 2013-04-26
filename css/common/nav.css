@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+#navigator {
+	position: fixed;
+	height: 45px;
+	left: 0;
+	right: 0;
+	top: -45px;
+	background-color: #30b0b4;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	-webkit-transition: top 500ms;
+	z-index: 110;
+}
+
+#navigator a {
+	text-decoration: none;
+}
+
+.logo {
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	color: white;
+	margin: 0 50px;
+	vertical-align: middle;
+	text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#logo_en {
+	font-size: 36px;
+}
+
+#logo_cn {
+	font-size: 25px;
+	float: right;
+}
+
+.toolbar {
+	display: inline-block;
+	width: 24px;
+	height: 18px;
+	margin: 0 10px;
+	background-image: url("../../images/toolbar.png");
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#mail {
+	background-position: 0 0;
+}
+
+#mail span {
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-left: 16px;
+	margin-top: -6px;
+	color: white;
+	font-size: 10px;
+	border: 1px black solid;
+	background-color: #a30000;
+	text-align: center;
+	line-height: 12px;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+#settings {
+	background-position: -32px 0;
+}
+
+#sounds {
+	background-position: -64px 0;
+}
+
+#search {
+	background-position: -96px 0;
+}
+
+#search-pane {
+	display: inline-block;
+	width: 0;
+	overflow: hidden;
+	border: 1px white solid;
+	border-radius: 3px;
+	box-shadow: 0 0 10px #999999 inset;
+	background: url("../../images/toolbar.png") white -90px -29px no-repeat;
+}
+
+#search-pane input {
+	width: 150px;
+	height: 22px;
+	border: none;
+	border-left: 1px lightgray solid;
+	margin: 0 0 0 30px;
+	padding: 0 5px;
+	vertical-align: top;
+	background-color: transparent;
+	color: #30b0b4;
+}
+
+#search-pane input:focus {
+	outline: none;
+}
+
+.plus {
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	font-size: 28px;
+	color: white;
+	vertical-align: middle;
+	margin: 0 20px;
+	-webkit-transition: color 200ms;
+}
+
+.plus:hover {
+	color: yellow;
+}

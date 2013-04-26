@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import url("default.css");
+@import url("common/nav.css");
+@import url("common/left-right.css");
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}

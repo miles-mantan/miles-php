@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#left-section {
+	position: fixed;
+	width: 0;
+	border-width: 40px 0 40px 120px;
+	border-style: solid none solid solid;
+	border-color: transparent transparent transparent rgba(48, 176, 180, 0.8);
+	top: 0;
+	bottom: 0;
+	left: -120px;
+	z-index: 100;
+	-webkit-transition: left 500ms;
+}
+
+#right-section {
+	position: fixed;
+	width: 0;
+	border-width: 40px 120px 40px 0;
+	border-style: solid solid solid none;
+	border-color: transparent rgba(48, 176, 180, 0.8) transparent transparent;
+	top: 0;
+	bottom: 0;
+	right: -120px;
+	z-index: 100;
+	-webkit-transition: right 500ms;
+}
